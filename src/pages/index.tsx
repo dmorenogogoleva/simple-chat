@@ -2,13 +2,16 @@ import Head from "next/head";
 import styles from "@/styles/Home.module.css";
 import { Roboto } from "next/font/google";
 import { clsx } from "clsx";
-import { useEffect } from "react";
-import handler from "./api/hello";
+import { ChatLayout } from "@/components/ChatLayout/ChatLayout";
 
 const roboto = Roboto({
   weight: "400",
   subsets: ["latin"],
 });
+
+// interface HomeProps {
+//   messages?: Message[];
+// }
 
 export default function Home() {
   return (
@@ -23,11 +26,19 @@ export default function Home() {
         <header className={styles.header}>
           <h1>simple chat</h1>
         </header>
-        <main>some messages</main>
+        <main>
+          <ChatLayout />
+        </main>
       </main>
     </>
   );
 }
+
+// export async function getServerSideProps() {
+//   const messages = await getMessages();
+
+//   return { props: { messages } };
+// }
 
 // export async function getServerSideProps() {
 //   const res = await fetch(`https://cat-fact.herokuapp.com/facts`);
