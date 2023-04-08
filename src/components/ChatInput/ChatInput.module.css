@@ -1,0 +1,14 @@
+.container {
+  min-height: 4rem;
+  width: 100%;
+  display: flex;
+}
+
+.input {
+  flex-grow: 1;
+  padding: 1rem;
+}
+
+.button {
+  width: 10rem;
+}

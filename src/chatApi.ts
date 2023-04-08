@@ -1,4 +1,5 @@
 import { Message } from "./types";
+import { getRandomString } from "./utils";
 
 const mockMessages = [
   { id: "1", text: "Hello" },
@@ -6,10 +7,6 @@ const mockMessages = [
   { id: "3", text: "Fine, thanks" },
   { id: "4", text: "Nothing to say" },
 ];
-
-function getRandomString(length = 100) {
-  return Math.random().toString(36).substring(2).slice(0, length);
-}
 
 export function getMessages(num = 50): Promise<Message[]> {
   const messages: Message[] = [];

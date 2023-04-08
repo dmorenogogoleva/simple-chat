@@ -6,7 +6,7 @@ interface ChatLayoutProps {
 }
 
 export const ChatLayout: React.FC<ChatLayoutProps> = ({ messages }) => {
-  if (!messages || !messages.length) return <div>empty chat</div>;
+  if (!messages || !messages.length) return <div>no messages</div>;
 
   return (
     <div>

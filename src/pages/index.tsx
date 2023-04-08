@@ -2,7 +2,7 @@ import Head from "next/head";
 import styles from "@/styles/Home.module.css";
 import { Roboto } from "next/font/google";
 import { clsx } from "clsx";
-import { ChatLayout } from "@/components/ChatLayout/ChatLayout";
+import { ChatContainer } from "@/components/ChatContainer/ChatContainer";
 
 const roboto = Roboto({
   weight: "400",
@@ -26,9 +26,7 @@ export default function Home() {
         <header className={styles.header}>
           <h1>simple chat</h1>
         </header>
-        <main>
-          <ChatLayout />
-        </main>
+        <ChatContainer />
       </main>
     </>
   );

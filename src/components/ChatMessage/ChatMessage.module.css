@@ -1,0 +1,9 @@
+.message {
+  padding: 0.5rem;
+  width: 80%;
+  margin-left: auto;
+  background-color: lightblue;
+  margin-bottom: 0.5rem;
+  border-radius: 1rem;
+  border-bottom-left-radius: 0;
+}
